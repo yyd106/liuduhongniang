@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <path d="M192 0v1024h768v-1024h-768zM576 256.33c70.51 0 127.67 57.16 127.67 127.67s-57.16 127.67-127.67 127.67-127.67-57.16-127.67-127.67 57.16-127.67 127.67-127.67v0zM768 768h-384v-64c0-70.696 57.306-128 128-128v0h128c70.696 0 128 57.304 128 128v64z" transform=""/>
+  <path d="M64 64h96v192h-96v-192z" transform=""/>
+  <path d="M64 320h96v192h-96v-192z" transform=""/>
+  <path d="M64 576h96v192h-96v-192z" transform=""/>
+  <path d="M64 832h96v192h-96v-192z" transform=""/>
+</svg>
