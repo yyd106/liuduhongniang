@@ -1,0 +1,19 @@
+
+
+function List<Person> getSinglePersonList(Person starter){
+    List<Person> singlePersonFromCompanyPool = getSinglePersonFromCompanyPool(
+                                                        getPersonCompany(starter)
+                                                        );
+    List<Person> singlePersonFromOtherCompanys = getSinglePersonFromOtherCompanys(
+                                                        getAvailableCompany(starter)
+                                                        );
+}
+
+function Company getPersonCompany(Person person){
+    return person.company;
+}
+
+
+function List<Company> getAvailableCompany(Person person){
+    return person.company;
+}

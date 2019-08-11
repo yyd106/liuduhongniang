@@ -1,0 +1,135 @@
+swagger: '2.0'
+
+info:
+  title: BindDating APIs
+  version: 'v1'
+  description: |
+
+  contact:
+    name: Yudao Yan
+    email: yyd106@126.com
+
+basePath: /
+
+schemes:
+- http
+- https
+
+produces:
+- application/json
+
+paths:
+  /user/{userId}/group:
+    # API (1) Get User's group by given openId
+    get:
+      summary: Get certain user's group
+      operationId: getUserGroup
+      parameters:
+        - name: userId
+          description: User's open ID
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/group'
+    
+
+definitions:
+  user:
+    # Defined User's information in our system 
+    type: object
+    properties:
+      openId:
+        type: string
+      groupId:
+        summary: "The group which user belongs to"
+        type: string
+        default: "none"
+      basicInfo:
+        summary: "User's basic info, such as age,"
+        type: object
+        properties:
+        - $ref: '#/definitions/basicInfo'
+      subInfo:
+        summary: "User's sub info, such as self introduction"
+        type: object
+        properties:
+        - $ref: '#/definitions/subInfo'
+
+  group:
+    # Defined group's information in our system
+    type: object
+    properties:
+      groupId:
+        type: string
+      orgName:
+        summary: "Orgnization name, such as company name"
+        type: string
+      quantity:
+        type: int
+
+  basicInfo:
+    # Defined user's basic properties
+    type: object
+    properties:
+      openId:
+        type: string
+      name: 
+        type: string
+      birthday:
+        type: string
+      weight: 
+        type: string
+      height:
+        type: string
+      location:
+        type: string
+      hometown:
+        type: string
+      marital:
+        type: string
+      education:
+        type: string
+      school:
+        type: string
+      occupation:
+        type: string
+      company:
+        type: string
+      assets:
+        type: string
+      incoming:
+        type: string
+      wechat:
+        type: string
+      mobile:
+        type: string
+
+    conditionInfo:
+      type: object
+      properties:
+
+
+    subInfo:
+      type: object
+      properties:
+        selfIntro:
+          type: string
+        hobits:
+          type: string
+        seeking:
+          summary: "The one you are looking for should be..."
+          type: string
+        family:
+          type: string
+        vision:
+          type: string
+        
+
+
