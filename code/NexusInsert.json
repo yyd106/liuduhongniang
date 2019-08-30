@@ -1,0 +1,19 @@
+{
+	"_id": "7f3c10fd-c8fb-4e26-b5c0-9ae69c96989c",
+	"gendor": 1,
+	"company": "pingan",
+	"_openid": "testuser4",
+	"adjCompanies": [{
+		"level": 1,
+		"companyName": "tencent"
+	},
+	{
+		"level": 2,
+		"companyName": "cisco"
+	}],
+	"friends": [{
+		"openid": "testuser1",
+		"relationship": "schoolmate"
+	}],
+	"single": true
+}
